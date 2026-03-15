@@ -11,18 +11,36 @@ body {
 }
 
 header{
-    padding:0 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    height:100vh;
-    align-items: center;
-    text-align: left;
+  min-height: 100vh;
+position: relative;
+  overflow: hidden;
+}
+
+.fv::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("picture/FV.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .container{
-  max-width:1000px;
-  margin:0 auto;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  
+} 
+
+.title{
+  text-align: left;
 }
 
 header p{
@@ -42,9 +60,300 @@ header h1{
     color: transparent;            
     -webkit-text-stroke: 1px #0E314B;
     text-shadow:4px 4px 0 #FFD7E7; 
+}
+
+.scroll_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  right: 400px;
+  bottom: 80px;
+}
+
+.scroll_button p{
+    font-family:"dela-gothic-one", sans-serif ;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    color:#0E314B;
+}
+
+.button_icon{
+  position:relative;
+  display:inline-block;
+  width:120px;
+  height:120px;
+}
+
+.circle{
+  position:absolute;
+  width:100px;
+  height:100px;
+  background:#9BD5FF;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.triangle{
+ position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-30%);
+
+  width:60px;
+  height:40px;
+  background:#FFD7E7;
+  clip-path:polygon(50% 100%, 0 0, 100% 0);
+
+  border-radius:6px;
+  filter:drop-shadow(0 0 0 white);
+}
+
+nav{
+    background-color: rgb(155, 213, 255, 0.42);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px 50px;
+    width:100%;
+}
+
+nav ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FEFAFB;
+    font-family: "quinella", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;         
+    -webkit-text-stroke: 1px #0E314B;
+}
+.message{
+  margin-top: 240px;
+  position: relative;
+  min-height: 1784px;
+}
+.section_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_title_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     margin-top: -80px;
+}
+
+.section_title_text p{
+    font-family: "quinella", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: transparent;           
+    -webkit-text-stroke: 1px #0E314B;
+}
+
+.section_title_text h2{
+  font-family: "sicgothicduex", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 36px;          
+  color:#0E314B;
+}
+.imgcloud1{
+  position: absolute;
+  top:200px;
+  right:0px;
+}
+
+.imgcloud2{
+  position: absolute;
+  top:720px;
+  left:0px;
+}
+.cloudtxt{
+  max-width:1000px;
+  margin:0 auto;
+  position:relative;
+
+}
+.cloudtxt1{
+  width:523.33px ;
+  height:254.18px;
+  position: absolute;
+  top:250px;
+  left:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "sicgothicduex", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;          
+  color:#0E314B;
+  text-shadow:4px 4px 0#FEFAFB ;
+  background-image: url("picture/message_cloudtxt1.png");
+}
+
+.cloudtxt2{
+  width:523.33px ;
+  height:254.18px;
+  position: absolute;
+  top:500px;
+  right:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "sicgothicduex", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;          
+  color:#0E314B;
+  text-shadow:4px 4px 0#FEFAFB ;
+  background-image: url("picture/message_cloudtxt2.png");
+}
+
+.message_content2{
+  max-width:1000px;
+  margin:0 auto;
+  position:relative;
+}
+
+.talk_txt{
+  padding-top:40px;
+  padding-left: 40px;
+  position:absolute;
+  top:1100px;
+  left:0px;
+  font-family: "sicgothicduex", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;          
+  color:#0E314B;
+  text-shadow:4px 4px 0#FEFAFB ;
+  width:639.85px;
+  height:282.82px;
+  background-image:url("picture/message_talk.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+.message_content2 img{
+  position:absolute;
+  top:1100px;
+  right:0px;
+
+}
+.about{
+  margin-top: 240px;
+}
+.about_content_subtitle{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 60px;
+}
+.about_content h1{
+  margin-top: 64px;
+  width: 608.49px;
+  height:385.87px;
+  background-image: url(picture/about_cloudtitle.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:"dela-gothic-one", sans-serif ;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+}
+
+.about_content1{
+  max-width:1000px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_txtbox{
+  width: 480px;
+  height: 330px;
+  border:1px solid #0E314B; 
+  background-color: transparent;
+  position: relative; 
+  padding:30px;
+ 
 
 }
 
-.title{
+.about_txtbox::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-color:rgb(155, 213, 255, 0.42);
+  transform:translate(15px,15px);
+  z-index:-1;
+}
+.about_txt1{
+  position:relative;
+}
+
+.about_txt1 img{
+  position:absolute;
+  top:-180px;
+  right:-200px;
+  z-index: -10000;
+}
+.about_txtall h2{
+  font-family: "dela-gothic-one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: transparent;            
+    -webkit-text-stroke: 1px #0E314B;
+  text-shadow:4px 4px 0 #FFD7E7 ;
+}
+.about_txtbox h3{
+  font-family:"dela-gothic-one", sans-serif ;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  text-shadow:4px 4px 0#FEFAFB ;
+}
+
+.about_txtbox p{
+  margin-top: 32px;
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  text-shadow:2px 2px 0#FEFAFB ;
 
 }
