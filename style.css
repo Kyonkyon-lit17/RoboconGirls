@@ -266,13 +266,13 @@ nav a{
 .about{
   margin-top: 240px;
 }
-.about_content_subtitle{
+.about_content_subtitle1{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   column-gap: 60px;
 }
-.about_content h1{
+.about_content_subtitle1 h1{
   margin-top: 64px;
   width: 608.49px;
   height:385.87px;
@@ -292,10 +292,10 @@ nav a{
 
 .about_content1{
   max-width:1000px;
-  margin:0 auto;
+  margin:120px auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:flex-start;
 }
 
 .about_txtbox{
@@ -318,13 +318,14 @@ nav a{
   z-index:-1;
 }
 .about_txt1{
+  margin-top:  100px;
   position:relative;
 }
 
 .about_txt1 img{
   position:absolute;
-  top:-180px;
-  right:-200px;
+  top:-200px;
+  right:-100px;
   z-index: -10000;
 }
 .about_txtall h2{
@@ -356,4 +357,331 @@ nav a{
   color:#0E314B;
   text-shadow:2px 2px 0#FEFAFB ;
 
+}
+
+.about_content_subtitle2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_content_subtitle2 h1{
+  margin-top: 64px;
+  width: 583.9px;
+  height:378.34px;
+  background-image: url(picture/about_cloudtitle_mirror.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:"dela-gothic-one", sans-serif ;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+}
+
+.about_content2{
+  max-width:1000px;
+  margin:120px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+
+.about_txt2{
+  margin-top:  100px;
+  position:relative;
+}
+
+.about_txt2 img{
+  position:absolute;
+  top: -100px;
+  left:80px;
+  z-index: -10000;
+}
+.goodness{
+  margin-top:180px;
+  height: 1300px;
+}
+.goodness_content{
+  position:relative;
+}
+
+.bgimg1{
+  position:absolute;
+  top:-200px;
+  right:0px;
+}
+
+.bgimg2{
+  position:absolute;
+  top:500px;
+  left:0px;
+
+}
+
+.goodness_text{
+  max-width:1000px;
+  margin:200px auto;
+  position:relative;
+ /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;*/
+}
+
+.goodness_textbox1{
+  position:relative;
+  width: 442.96px;
+  height: 275.62px;
+  background-image: url(picture/goodness_rectangle1.png);
+}
+
+.goodness_textbox1 h2{
+  position:absolute;
+  top:-10px;
+  left:30px;
+}
+
+.goodness_textbox1 p{
+  position:absolute;
+  top:150px;
+  left:30px;
+}
+
+.goodness_textbox1 h3{
+  position:absolute;
+  top:180px;
+  left:30px;
+}
+
+
+
+.goodness_textbox2{
+  position: absolute;
+  top:200px;
+  left:20%;
+  width: 538px;
+  height: 276px;
+  background-image: url(picture/goodness_rectangle2.png);
+}
+
+.goodness_textbox2 h2{
+  position:absolute;
+  top:-10px;
+  left:180px;
+}
+
+.goodness_textbox2 p{
+  position:absolute;
+  top:150px;
+  left:120px;
+}
+
+.goodness_textbox2 h3{
+  position:absolute;
+  top:180px;
+  left:120px;
+}
+
+.goodness_textbox3{
+  position: absolute;
+  top:400px;
+  left:50%;
+  width: 442px;
+  height: 272px;
+  background-image: url(picture/goodness_rectangle3.png);
+}
+
+.goodness_textbox3 h2{
+  position:absolute;
+  top:-10px;
+  left:180px;
+}
+
+.goodness_textbox3 p{
+  position:absolute;
+  top:150px;
+  left:100px;
+}
+
+.goodness_textbox3 h3{
+  position:absolute;
+  top:180px;
+  left:100px;
+}
+
+.textboxn{
+  font-family: "bitcount-prop-double-circle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 128px;
+  color: #FEFAFB;
+}
+
+.textboxp{
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  text-shadow:2px 2px 0#FEFAFB
+
+}
+
+.textboxh{
+  font-family:"dela-gothic-one", sans-serif ;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  text-shadow:4px 4px 0#FEFAFB ;
+}
+
+.interview{
+  margin-top: 180px;
+}
+
+.lastmessage_content{
+  max-width:1000px;
+  margin:128px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.lastmessage_content .talk_txt2{
+  padding-top:40px;
+  padding-left: 40px;
+  font-family: "sicgothicduex", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;          
+  color:#0E314B;
+  text-shadow:4px 4px 0#FEFAFB ;
+  width:639.85px;
+  height:282.82px;
+  background-image:url("picture/message_talk.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  row-gap:64px;
+
+}
+.contact_content{
+  width: 1000px;
+  height:664px;
+  padding:120px 200px;
+  background-image: url(picture/whiteboard.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content:center;
+  align-items: center;
+}
+
+.contact_content p{
+  font-family: "sicgothicduex", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;          
+  color:#0E314B;
+}
+
+.contact_content .icons{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.contact_txt1{
+  text-align: left;
+  align-self: flex-start;
+}
+
+.contact_txt2{
+  text-align: right;
+  align-self: flex-end;
+}
+.qa_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 64px;
+}
+.qabox{
+  width: 890px;
+  height: 211px;
+  border:1px solid #0E314B; 
+  background-color: transparent;
+  position: relative; 
+  padding:0 10px;
+}
+
+.qabox::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-color:rgb(155, 213, 255, 0.42);
+  transform:translate(15px,15px);
+  z-index:-1;
+}
+.qabox h1{
+  font-family: "quinella", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    color: #FEFAFB;           
+    -webkit-text-stroke: 1px #0E314B;
+
+}
+.Q{
+  position:absolute;
+  top:-70px;
+  left:-50px;
+}
+
+.questiontext{
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  position:absolute;
+  top:30px;
+  left:60px;
+  border-bottom:2px dashed rgb(14, 49, 75,0.5);
+  padding-bottom:10px;
+}
+
+.answertext{
+  max-width: 700px;
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  position:absolute;
+  top:90px;
+  left:15%;
+}
+.A{
+  position:absolute;
+  bottom: -70px;
+  right:-50px;
 }
