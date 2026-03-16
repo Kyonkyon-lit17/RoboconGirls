@@ -20,10 +20,10 @@ position: relative;
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("picture/FV.png");
+  background-image: url("picture/FV5.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100vw;
+  background-size: cover;
   z-index: 0;
   pointer-events: none;
 }
@@ -547,6 +547,186 @@ nav a{
 .interview{
   margin-top: 180px;
 }
+.interview_slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.interview_box{
+  width:1000px;
+  height: 500px;
+  margin:64px 110px;
+  position:relative;
+  border:1px solid #0E314B; 
+  background-color: transparent;
+}
+
+.interview_box::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-color:rgb(155, 213, 255, 0.42);
+  transform:translate(15px,15px);
+  z-index:-1;
+}
+
+.pins{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interview_main{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 30px;
+  column-gap: 40px;
+}
+.personal{
+  width: 420px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap:20px;
+  align-items: center;
+
+}
+
+.personal_info{
+  padding: 20px 60px;
+}
+.personal_info h3{
+  font-family: "dela-gothic-one", sans-serif;
+  font-size: 24px;
+  color:#0E314B;
+}
+
+.personal_info p{
+  margin-top: 8px;
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+}
+
+.personal_info{
+  width:364px;
+  height:158px;
+  background-image: url(picture/interview_rabel.png);
+}
+
+.interview_text{
+  padding:30px 0px;
+  position:relative;
+}
+
+.interview_text h3{
+  font-family: "dela-gothic-one", sans-serif;
+  font-size: 24px;
+  color:#0E314B;
+  letter-spacing: 0.1em;
+  text-shadow:2px 2px 0#FEFAFB ;
+  position: absolute;
+  top:0px;
+
+}
+
+.interview_text p{
+  margin-top: 24px;
+  margin-left: 30px;
+  margin-right:30px;
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  color:#0E314B;
+}
+
+.interview_text img{
+  position:absolute;
+  top:320px;
+  right:30px;
+}
+.dotted_line{
+  height:10px;
+  width:550px;
+  border-bottom:10px dotted #F28BB3;
+  position:absolute;
+  top:400px;
+
+}
+
+.gallary_box{
+  width:1000px;
+  height:1000px;
+  margin:64px 110px;
+  display: flex;
+  position:relative;
+
+}
+
+.gallary_box h2{
+  width:319px ;
+  height:63px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index: 1;
+  background-image: url(picture/gallary_toptext.png);
+  font-family:"dela-gothic-one", sans-serif ;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  text-shadow:4px 4px 0#FEFAFB ;
+
+}
+.youtube{
+  width: 700px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  top:30px;
+  left:15%;
+  border:1px solid #0E314B; 
+  background-color: transparent;
+}
+
+.youtube::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-color:rgb(155, 213, 255, 0.42);
+  transform:translate(15px,15px);
+  z-index:-1;
+}
+
+.gallary_box h3{
+  width: 419px;
+  height: 137px;
+  position:absolute;
+  top:450px;
+  right:0px;
+  background-image: url(picture/gallary_downtext.png);
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  text-shadow:2px 2px 0#FEFAFB
+  
+}
+
 
 .qa_content{
   margin-top: 128px;
