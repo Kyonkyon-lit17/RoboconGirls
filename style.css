@@ -548,6 +548,109 @@ nav a{
   margin-top: 180px;
 }
 
+.qa_content{
+  margin-top: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 128px;
+}
+.qabox{
+  width: 890px;
+  height: 211px;
+  border:1px solid #0E314B; 
+  background-color: transparent;
+  position: relative; 
+  padding:0 10px;
+}
+
+.qabox::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-color:rgb(155, 213, 255, 0.42);
+  transform:translate(15px,15px);
+  z-index:-1;
+}
+.qabox h1{
+  font-family: "quinella", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    color: #FEFAFB;           
+    -webkit-text-stroke: 1px #0E314B;
+
+}
+.Q{
+  position:absolute;
+  top:-70px;
+  left:-50px;
+}
+
+.questiontext{
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  position:absolute;
+  top:30px;
+  left:60px;
+  border-bottom:2px dashed rgb(14, 49, 75,0.5);
+  padding-bottom:10px;
+}
+
+.answertext{
+  max-width: 700px;
+  font-family:"sicgothicduex", sans-serif ;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color:#0E314B;
+  position:absolute;
+  top:90px;
+  left:15%;
+}
+.A{
+  position:absolute;
+  bottom: -70px;
+  right:-50px;
+}
+
+.send_button{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  width: 420px;
+  height: 90px;
+
+  border: 3px solid #0E314B;
+  text-decoration: none;
+
+  font-family: "dela-gothic-one", sans-serif;
+  font-size: 32px;
+  color:#0E314B;
+}
+
+.send_button::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:#FFD7E7;
+  transform:translate(10px,10px);
+
+  z-index:-1;
+}
+.lastmessage{
+  margin-top:240px;
+}
 .lastmessage_content{
   max-width:1000px;
   margin:128px auto;
@@ -614,74 +717,4 @@ nav a{
 .contact_txt2{
   text-align: right;
   align-self: flex-end;
-}
-.qa_content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 64px;
-}
-.qabox{
-  width: 890px;
-  height: 211px;
-  border:1px solid #0E314B; 
-  background-color: transparent;
-  position: relative; 
-  padding:0 10px;
-}
-
-.qabox::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-color:rgb(155, 213, 255, 0.42);
-  transform:translate(15px,15px);
-  z-index:-1;
-}
-.qabox h1{
-  font-family: "quinella", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 128px;
-    color: #FEFAFB;           
-    -webkit-text-stroke: 1px #0E314B;
-
-}
-.Q{
-  position:absolute;
-  top:-70px;
-  left:-50px;
-}
-
-.questiontext{
-  font-family:"sicgothicduex", sans-serif ;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  color:#0E314B;
-  position:absolute;
-  top:30px;
-  left:60px;
-  border-bottom:2px dashed rgb(14, 49, 75,0.5);
-  padding-bottom:10px;
-}
-
-.answertext{
-  max-width: 700px;
-  font-family:"sicgothicduex", sans-serif ;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 20px;
-  letter-spacing: 0.1em;
-  color:#0E314B;
-  position:absolute;
-  top:90px;
-  left:15%;
-}
-.A{
-  position:absolute;
-  bottom: -70px;
-  right:-50px;
 }
