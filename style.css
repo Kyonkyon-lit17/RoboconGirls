@@ -8,6 +8,7 @@ body {
   background-color: #FEFAFB;
   background-image: url("picture/backgroundpattern.png");
   background-repeat: repeat;
+  -webkit-font-smoothing: antialiased;
 }
 
 header{
@@ -20,7 +21,7 @@ position: relative;
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("picture/FV5.png");
+  background-image: url("picture/FV7.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -68,15 +69,15 @@ header h1{
     justify-content: center;
     align-items: center;
     position: absolute;
-  right: 400px;
-  bottom: 80px;
+    right: 300px;
+    bottom: 50px;
 }
 
 .scroll_button p{
     font-family:"dela-gothic-one", sans-serif ;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: 0.1em;
     color:#0E314B;
 }
