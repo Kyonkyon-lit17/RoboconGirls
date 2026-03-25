@@ -138,6 +138,11 @@ nav a{
 
 .message{
   margin-top: 240px;
+  background-image: url(picture/message_bg.png);
+  background-size: contain;
+  background-position: 50% 32%;
+  background-repeat: no-repeat;
+
 }
 .section_title{
   margin: 0 auto;
@@ -512,8 +517,12 @@ align-self: flex-start;
 }
   }
 .goodness{
-  margin:0% 5%;
+  padding:5% 5%;
   margin-top:180px;
+  background-image: url(picture/goodness_bg.png);
+  background-size: contain;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
 }
 .goodness_content{
   position:relative;
