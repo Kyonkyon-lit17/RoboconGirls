@@ -308,10 +308,10 @@ align-self: flex-start;
  
 @media(max-width:768px){
   .cloudtxt1 .cloudtxt2{
-    width: 70%;
+    width: 80%;
   }
   .talk_txt img{
-    height:fit-content;
+    height:120%;
   }
 }
 .about{
@@ -1140,7 +1140,7 @@ align-self: flex-start;
 }
 @media(max-width:768px){
   .talk_txt2 img{
-    height:fit-content;
+    height:150%;
   }
 }
 .kyonkyon{
