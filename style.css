@@ -121,6 +121,12 @@ nav ul{
     column-gap: 60px;
 }
 
+@media(max-width:768px){
+  nav ul{
+    column-gap:20px;
+  }
+}
+
 nav li{
     list-style: none;
 }
@@ -183,7 +189,7 @@ nav a{
   font-family: "sicgothicduex", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: clamp(24px, 2vw, 36px); ;          
+  font-size: clamp(16px, 2vw, 36px); ;          
   color:#0E314B;
 }
 .cloudtxt{
@@ -299,7 +305,15 @@ align-self: flex-start;
   width:100%;
   height:auto;
 }
-  
+ 
+@media(max-width:768px){
+  .cloudtxt1 .cloudtxt2{
+    width: 70%;
+  }
+  .talk_txt img{
+    height:fit-content;
+  }
+}
 .about{
   margin:0% 5%;
   margin-top: 180px;
@@ -329,7 +343,7 @@ align-self: flex-start;
   font-family:"dela-gothic-one", sans-serif ;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(20px, 4vw, 48px); ;
+  font-size: clamp(16px, 3vw, 48px); ;
   letter-spacing: 0.1em;
   color:#0E314B;
 }
@@ -720,6 +734,7 @@ align-self: flex-start;
   background-color: transparent;
 }
 
+
 .interview_box::before{
   content:"";
   position:absolute;
@@ -828,6 +843,9 @@ align-self: flex-start;
 }
 
 @media (max-width:768px) {
+  .interview_box{
+  margin:64px 2%;
+}
   .interview_main{
     display: flex;
     flex-direction:column;
@@ -987,6 +1005,9 @@ align-self: flex-start;
   height: 210px;
   border:1px solid #0E314B; 
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative; 
   padding:0 10px;
 }
@@ -1064,7 +1085,7 @@ align-self: flex-start;
   text-decoration: none;
 
   font-family: "dela-gothic-one", sans-serif;
-  font-size: clamp(24px, 3vw, 36px);
+  font-size: clamp(20px, 3vw, 36px);
   color:#0E314B;
 }
 
@@ -1117,7 +1138,11 @@ align-self: flex-start;
   width: 100%;
   height: auto;
 }
-
+@media(max-width:768px){
+  .talk_txt2 img{
+    height:fit-content;
+  }
+}
 .kyonkyon{
   width:70%;
   height:auto;
