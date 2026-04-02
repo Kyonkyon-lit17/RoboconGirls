@@ -212,7 +212,7 @@ nav a{
   font-family: "sicgothicduex", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: clamp(12px, 1.5vw, 20px);          
+  font-size: clamp(10px, 1.5vw, 20px);          
   color:#0E314B;
   text-shadow:2px 2px 0#FEFAFB ;
   position: absolute;
@@ -240,7 +240,7 @@ nav a{
   font-family: "sicgothicduex", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: clamp(12px, 2vw, 20px);          
+  font-size: clamp(10px, 2vw, 20px);          
   color:#0E314B;
   text-shadow:2px 2px 0#FEFAFB ;
   position: absolute;
@@ -277,7 +277,7 @@ align-self: flex-start;
   font-family: "sicgothicduex", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: clamp(16px, 2vw, 24px);          
+  font-size: clamp(12px, 3vw, 24px);          
   color:#0E314B;
   text-shadow:2px 2px 0#FEFAFB ;
   position: absolute;
@@ -329,7 +329,7 @@ align-self: flex-start;
 .about_content_subtitle1_txt{
   position: relative;
   width: 40%;
-  min-width: 250px;
+  min-width: 150px;
   max-width: 600px;
 }
 
@@ -702,7 +702,7 @@ align-self: flex-start;
   font-family: "bitcount-prop-double-circle", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(64px,12vw, 128px)   ;
+  font-size: clamp(48px,12vw, 128px)   ;
   color: #FEFAFB;
 }
 
@@ -721,7 +721,7 @@ align-self: flex-start;
   font-family:"dela-gothic-one", sans-serif ;
   font-weight: 400;
   font-style: normal;
-   font-size: clamp(24px,5vw, 48px)   ;
+   font-size: clamp(20px,5vw, 48px)   ;
   letter-spacing: 0.1em;
   color:#0E314B;
   text-shadow:4px 4px 0#FEFAFB ;
@@ -915,7 +915,7 @@ align-self: flex-start;
   align-items: center;
 }
 .toptext{
-  width: 45%;
+  width: 60%;
   max-width:480px;
   height:auto;
   border:1px solid #0E314B; 
@@ -940,7 +940,7 @@ align-self: flex-start;
   font-family: "sicgothicduex", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: clamp(24px, 2vw, 32px);          
+  font-size: clamp(20px, 2vw, 32px);          
   color:#0E314B;
   text-shadow:2px 2px 0#FEFAFB ;
   display: flex;
@@ -1000,7 +1000,7 @@ align-self: flex-start;
   font-family: "sicgothicduex", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: clamp(24px, 2vw, 32px);          
+  font-size: clamp(20px, 2vw, 32px);          
   color:#0E314B;
   text-shadow:2px 2px 0#FEFAFB ;
   display: flex;
@@ -1042,7 +1042,7 @@ align-self: flex-start;
   justify-content: center;
   align-items: center;
   position: relative; 
-  padding:0 10px;
+  padding:0px 0px 8px 15px;
 }
 @media(max-width:768px){
   .qabox{
@@ -1132,6 +1132,12 @@ align-self: flex-start;
 
   z-index:-1;
 }
+
+@media(max-width:768px){
+  .send_button img{
+    width:70%;
+  }
+}
 .lastmessage{
   margin:0% 8%;
   margin-top:180px;
@@ -1169,8 +1175,11 @@ align-self: flex-start;
 }
 
 @media (max-width:768px) {
+  .talk_txt p{
+    font-size: clamp(10px, 2vw, 24px);
+  }
   .talk_txt2 p{
-  font-size: clamp(12px, 2.5vw, 24px);
+  font-size: clamp(10px, 2vw, 24px);
   } 
   
 }
